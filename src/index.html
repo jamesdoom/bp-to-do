@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP-To-Do</title>
+</head>
+<body>
+    <header>
+        <h1>Todos</h1>
+    </header>
+    
+    <section id="project-creation">
+        <h2>New Project</h2>
+        <form id="new-project-form">
+            <input type="text" id="project-name" placeholder="Project Name" required>
+            <button type="submit">Add Project</button>
+        </form>
+    </section>
+
+    <section id="creation-container">
+        <h2>Add Task</h2>
+        <form id="new-todo-form">
+            <input type="text" id="todo-title" placeholder="Title" required>
+            <textarea id="todo-description" placeholder="Description"></textarea>
+            <input type="date" id="todo-duedate">
+            <div id="todo-priority">
+                <label>
+                    <input type="radio" name="priority" value="Low" checked>
+                    When I can
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="Medium">
+                    Important
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="High">
+                    Critical
+                </label>
+            </div>
+            <textarea id="todo-notes" placeholder="Notes"></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+    </section>
+
+    <section id="project-container">
+        <h2>Projects</h2>
+        <ul id="project-list"></ul>
+    </section>
+
+    <section id="todos-container">
+        <h2>Tasks</h2>
+        <ul id="todo-list"></ul>
+    </section>
+
+    <div id="footer-container">
+        <p>&copy; 2023 Brian Palmer. All rights reserved.</p>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
+
+
